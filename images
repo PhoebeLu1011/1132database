@@ -1,3 +1,0 @@
-git add images/*
-git commit -m "新增 images 資料夾與圖片"
-git push origin main
