@@ -9,7 +9,7 @@
 
 1.使用 pandas 讀取病患復健數據，並分批處理。
 
-2.以DataTreatAgentAutogent利用多個AI Agent來合作處理病患病歷
+2.利用多個AI Agent來合作處理病患病歷
 
 3.由 AssistantAgent 提供初步治療建議。
 
