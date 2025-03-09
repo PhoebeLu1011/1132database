@@ -147,9 +147,31 @@ print(f"已將所有對話紀錄輸出為 {output_file}")
 最終生成的 all_conversation_log.csv 包含:
 每個病患的復健分析與建議、最新搜尋到的復健治療方法。
 
+## 導入數據
+| PatientID | Name         | Age | Gender | InjuryType       | Severity | MRI_Result           | XRay_Result          | Blood_Test_Result           | Recommended_Treatment                  |
+|-----------|-------------|-----|--------|------------------|----------|----------------------|----------------------|-----------------------------|----------------------------------------|
+| 1         | John Doe    | 45  | M      | ACL Tear         | Severe   | Complete tear        | Normal               | Normal                      | Physical therapy, possible surgery    |
+| 2         | Jane Smith  | 32  | F      | Fractured Wrist  | Moderate | No abnormalities     | Fracture on radius   | Normal                      | Cast immobilization, pain management  |
+| 3         | Michael Lee | 28  | M      | Concussion       | Mild     | No abnormalities     | Normal               | Elevated white blood cells  | Rest, cognitive therapy               |
+| 4         | Sarah Kim   | 60  | F      | Hip Arthritis    | Severe   | Cartilage degeneration | Normal               | Normal                      | Physical therapy, pain management     |
+| 5         | David Brown | 50  | M      | Rotator Cuff Tear | Moderate | Partial tear         | Normal               | Normal                      | Strength training, possible surgery   |
+| 6         | Emily White | 40  | F      | Herniated Disc   | Severe   | Disc protrusion      | Normal               | Normal                      | Physical therapy, spinal injections   |
+
 
 # AI Agent
-
+```mermaid
+graph LR;
+    A[用戶輸入運動目標] --> B{分析使用者資訊};
+    B -->|體能評估| C[計算基礎運動能力];
+    B -->|歷史數據| D[分析運動進步情況];
+    C --> E[選擇適合的訓練計畫];
+    D --> E;
+    E --> F[生成個人化訓練建議];
+    F --> G{用戶回饋與調整};
+    G -->|需要調整| E;
+    G -->|訓練完成| H[紀錄數據並提供分析報告];
+    H --> A;
+```
   
 
 
