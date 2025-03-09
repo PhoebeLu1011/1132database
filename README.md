@@ -1,7 +1,7 @@
 # 1132database
 
 # HW1
-本作業是一個多代理人協作對話，利用 RoundRobinGroupChat 將四個代理人（DataAgent、MultimodalWebSurfer、Assistant 與 UserProxy）組成團隊，分批處理 CSV 資料，並要求 MultimodalWebSurfer 搜尋外部網站，納入最新的復健治療建議資訊，最終將所有對話內容整合並輸出為 CSV。
+本作業是由多代理人協作對話，利用 RoundRobinGroupChat 將四個代理人（DataAgent、MultimodalWebSurfer、Assistant 與 UserProxy）組成團隊，分批處理 CSV 資料，並要求 MultimodalWebSurfer 搜尋外部網站，納入最新的復健治療建議資訊，最終將所有對話內容整合並輸出為 CSV。
 
 ## 主要功能
 
@@ -19,7 +19,7 @@
 
 * 程式碼
 
-1. process_chunk 函式
+1.process_chunk 函式
 
 負責處理單一批次資料，並執行AI Agents。
 
