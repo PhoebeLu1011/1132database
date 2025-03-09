@@ -1,27 +1,41 @@
 # 1132database
 
 # HW1
-本作業是由多代理人協作對話，利用 RoundRobinGroupChat 將四個代理人（DataAgent、MultimodalWebSurfer、Assistant 與 UserProxy）組成團隊，分批處理 CSV 資料，並要求 MultimodalWebSurfer 搜尋外部網站，納入最新的復健治療建議資訊，最終將所有對話內容整合並輸出為 CSV。
+本作業是利用 RoundRobinGroupChat 將四個代理人（DataAgent、MultimodalWebSurfer、Assistant 與 UserProxy）組成團隊並協作對話，分批處理 CSV 資料，並要求 MultimodalWebSurfer 搜尋外部網站，納入最新的復健治療建議資訊，最終將所有對話內容整合並輸出為 CSV。
 
-## 主要功能
+## 功能介紹
 
 透過 RoundRobinGroupChat 機制，讓多個AI Agents合作完成任務：
 
 1.使用 pandas 讀取病患復健數據，並分批處理。
 
 2.利用多個AI Agent來合作處理病患病歷
+AssistantAgent : 提供初步治療建議。
+MultimodalWebSurfer : 透過網路搜尋最新的復健與治療資訊。
 
-3.由 AssistantAgent 提供初步治療建議。
-
-4.以 MultimodalWebSurfer 透過網路搜尋最新的復健與治療資訊。
-
-5.將分析結果存成 CSV 檔案輸出。
+3.將分析結果存成 .CSV 檔案輸出。
 
 * 程式碼
 
+1.載入 Python 模組
+```
+import os
+import asyncio
+import pandas as pd
+from dotenv import load_dotenv
+import io
+```
+2.匯入Autogen 的 AI Agents
+```
+from autogen_agentchat.agents import AssistantAgent, UserProxyAgent
+from autogen_agentchat.conditions import TextMentionTermination
+from autogen_agentchat.teams import RoundRobinGroupChat
+from autogen_agentchat.messages import TextMessage
+```
+
 1.process_chunk 函式
 
-負責處理單一批次資料，並執行AI Agents。
+負責處理單一批次資料，並執行AI Agent。
 
 (1) 轉換資料格式
 
