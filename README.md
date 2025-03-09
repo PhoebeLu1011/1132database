@@ -9,7 +9,7 @@
 
 1.使用 pandas 讀取病患復健數據，並分批處理。
 
-2.利用多個AI Agent來合作處理病患病歷
+2.利用多個AI Agent來合作處理病患病歷。
 AssistantAgent : 提供初步治療建議。
 MultimodalWebSurfer : 透過網路搜尋最新的復健與治療資訊。
 
@@ -33,7 +33,7 @@ from autogen_agentchat.teams import RoundRobinGroupChat
 from autogen_agentchat.messages import TextMessage
 ```
 
-1.process_chunk 函式
+3.process_chunk 函式
 
 負責處理單一批次資料，並執行AI Agent。
 
@@ -97,7 +97,7 @@ async for event in local_team.run_stream(task=prompt):
 return messages
 ```
 
-2.main 函式
+4.main 函式
 
 (1) 讀取環境變數並初始化模型用戶端
 ```
