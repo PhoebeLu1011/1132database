@@ -1,8 +1,7 @@
 # 1132database
 
 # HW1
-
-本作業以DataTreatAgentAutogent利用多個AI Agent來協助處理病患病歷，分析患者需求，並透過 MultimodalWebSurfer上網搜尋治療相關資訊
+本作業是一個多代理人協作對話，利用 RoundRobinGroupChat 將四個代理人（DataAgent、MultimodalWebSurfer、Assistant 與 UserProxy）組成團隊，分批處理 CSV 資料，並要求 MultimodalWebSurfer 搜尋外部網站，納入最新的復健治療建議資訊，最終將所有對話內容整合並輸出為 CSV。
 
 ## 主要功能
 
