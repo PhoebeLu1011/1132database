@@ -9,9 +9,11 @@
 
 1.使用 pandas 讀取病患復健數據，並分批處理。
 
-2.利用多個AI Agent來合作處理病患病歷。
-AssistantAgent : 提供初步治療建議。
-MultimodalWebSurfer : 透過網路搜尋最新的復健與治療資訊。
+2.利用多個AI Agent來合作處理病患病歷。\
+DataAgent : 
+MultimodalWebSurfer : 透過網路搜尋最新的復健與治療資訊。\
+Assistant : 提供初步治療建議。\
+UserProxy : 
 
 3.將分析結果存成 .CSV 檔案輸出。
 
