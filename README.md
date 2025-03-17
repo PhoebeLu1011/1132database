@@ -10,10 +10,10 @@
 1.使用 pandas 讀取病患復健數據，並分批處理。
 
 2.利用多個AI Agent來合作處理病患病歷。\
-DataAgent : 
+DataAgent : 負責處理與整理數據。\
 MultimodalWebSurfer : 透過網路搜尋最新的復健與治療資訊。\
 Assistant : 提供初步治療建議。\
-UserProxy : 
+UserProxy : 模擬使用者，協助溝通。
 
 3.將分析結果存成 .CSV 檔案輸出。
 
@@ -163,22 +163,6 @@ print(f"已將所有對話紀錄輸出為 {output_file}")
 | 6         | Emily White | 40  | F      | Herniated Disc   | Severe   | Disc protrusion      | Normal               | Normal                      | Physical therapy, spinal injections   |
 
 
-# AI Agent
-透過對話來建議適合的訓練菜單（如耐力訓練），並追蹤使用者運動紀錄，提供使使用者進步的方法與建議。
-
-```mermaid
-graph LR;
-    A[用戶輸入運動目標] --> B{分析使用者資訊};
-    B -->|體能評估| C[計算基礎運動能力];
-    B -->|歷史數據| D[分析運動進步情況];
-    C --> E[選擇適合的訓練計畫];
-    D --> E;
-    E --> F[生成個人化訓練建議];
-    F --> G{用戶回饋與調整};
-    G -->|需要調整| E;
-    G -->|訓練完成| H[紀錄數據並提供分析報告];
-    H --> A;
-```
   
 
 
