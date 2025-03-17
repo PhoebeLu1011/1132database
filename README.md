@@ -18,7 +18,7 @@ UserProxy : 模擬使用者，協助溝通。
 3.將分析結果存成 .CSV 檔案輸出。
 
 * 架構圖\
-![圖片描述](images/image1.png)
+![圖片描述](images/image01.png)
  
 ## 程式碼
 
