@@ -1,6 +1,15 @@
 # 1132database
 
 # HW1
+
+* 架構圖\
+![圖片描述](images/image01.png)
+
+
+ 
+
+
+
 本作業是利用 RoundRobinGroupChat 將四個代理人（DataAgent、MultimodalWebSurfer、Assistant 與 UserProxy）組成團隊並協作對話，分批處理 CSV 資料，並要求 MultimodalWebSurfer 搜尋外部網站，納入最新的復健治療建議資訊，最終將所有對話內容整合並輸出為 CSV。
 
 ## 功能介紹
@@ -17,9 +26,7 @@ UserProxy : 模擬使用者，協助溝通。
 
 3.將分析結果存成 .CSV 檔案輸出。
 
-* 架構圖\
-![圖片描述](images/image01.png)
- 
+
 ## 程式碼
 
 1.載入 Python 模組
