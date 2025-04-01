@@ -1,13 +1,16 @@
-# 1132database
+# 1132資料結構
 
-# HW1
+# 目錄
+### HW1
+* [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/DatatreatAgentAutogen.py)
+* [架構圖](#架構圖)
+* [抽換數據](#抽換數據)
+* [AIAGENT種類的使用](#AIAGENT的使用)
 
-* 架構圖\
+## HW1
+### 架構圖
 ![圖片描述](images/image01.png)
-
-[程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/DatatreatAgentAutogen.py)
-
-* 抽換數據
+### 抽換數據
 
 | PatientID | Name         | Age | Gender | InjuryType       | Severity | MRI_Result           | XRay_Result          | Blood_Test_Result           | Recommended_Treatment                  |
 |-----------|-------------|-----|--------|------------------|----------|----------------------|----------------------|-----------------------------|----------------------------------------|
@@ -18,6 +21,19 @@
 | 5         | David Brown | 50  | M      | Rotator Cuff Tear | Moderate | Partial tear         | Normal               | Normal                      | Strength training, possible surgery   |
 | 6         | Emily White | 40  | F      | Herniated Disc   | Severe   | Disc protrusion      | Normal               | Normal                      | Physical therapy, spinal injections   |
  
+### AIAGENT的使用
+
+DataAgent : 負責處理與整理數據。\
+MultimodalWebSurfer : 透過網路搜尋最新的復健與治療資訊。\
+Assistant : 提供初步治療建議。\
+UserProxy : 模擬使用者，協助溝通。
+
+```
+from autogen_agentchat.agents import AssistantAgent, UserProxyAgent
+from autogen_agentchat.conditions import TextMentionTermination
+from autogen_agentchat.teams import RoundRobinGroupChat
+from autogen_agentchat.messages import TextMessage
+```
 
 
 
@@ -29,11 +45,7 @@
 
 1.使用 pandas 讀取病患復健數據，並分批處理。
 
-2.利用多個AI Agent來合作處理病患病歷。\
-DataAgent : 負責處理與整理數據。\
-MultimodalWebSurfer : 透過網路搜尋最新的復健與治療資訊。\
-Assistant : 提供初步治療建議。\
-UserProxy : 模擬使用者，協助溝通。
+2.利用多個AI Agent來合作處理病患病歷。
 
 3.將分析結果存成 .CSV 檔案輸出。
 
