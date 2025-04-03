@@ -7,6 +7,9 @@
 * [抽換數據](#抽換數據)
 * [AIAGENT種類的使用](#AIAGENT的使用)
 
+### HW3
+* [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/HW2_POSTAI.py)
+
 ## HW1
 ### 架構圖
 ![圖片描述](images/image01.png)
