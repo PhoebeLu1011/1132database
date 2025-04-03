@@ -8,7 +8,7 @@
 * [AIAGENT種類的使用](#AIAGENT的使用)
 
 ### HW3
-* [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/HW2_POSTAI.py)
+* [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/HW3_POSTAI.py)
 * [程式碼執行截圖](#程式碼執行截圖)
 
 ## HW1
