@@ -5,7 +5,7 @@ import time
 import csv
 from datetime import datetime
 
-# 讀取 .env 檔案
+# HW3讀取 .env 檔案
 load_dotenv()
 TIMETREE_EMAIL = os.getenv("TIMETREE_EMAIL")
 TIMETREE_PASSWORD = os.getenv("TIMETREE_PASSWORD")
@@ -33,7 +33,7 @@ with sync_playwright() as p:
         print("找不到 email 輸入框！")
 
 
-    # 使用 .env 讀取帳號密碼
+    # HW3使用 .env 讀取帳號密碼
     page.fill("input[name='email']",TIMETREE_EMAIL)
     page.fill("input[name='password']", TIMETREE_PASSWORD)
     page.screenshot(path="debug_1_after_login.png")
@@ -45,7 +45,8 @@ with sync_playwright() as p:
     # 等待登入完成
     page.wait_for_timeout(5000)
     print("登入成功！")
-
+    
+    #HW3
     # 直接前往個人頁面
     page.goto("https://timetreeapp.com/calendars")
     page.wait_for_timeout(3000)
