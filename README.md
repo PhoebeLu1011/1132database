@@ -9,7 +9,7 @@
 
 ### HW2
 * [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/DRai.py)
-* [程式碼執行截圖]
+* [程式碼執行截圖](#程式碼執行)
 
 ### HW3
 * [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/HW3_POSTAI.py)
@@ -190,6 +190,10 @@ print(f"已將所有對話紀錄輸出為 {output_file}")
 最終生成的 all_conversation_log.csv 包含:
 每個病患的復健分析與建議、最新搜尋到的復健治療方法。
 
+## HW2
+### 程式碼執行
+![圖片描述](images/HW2_IMAGE1.png)
+![圖片描述](images/HW2_IMAGE1.png)
 ## HW3
 ### 程式碼執行截圖
 ![圖片描述](images/HW2_IMAGE1.png)
