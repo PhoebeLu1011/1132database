@@ -196,7 +196,7 @@ print(f"已將所有對話紀錄輸出為 {output_file}")
 ![圖片描述](images/HW2_IMAGE2.png)
 ## HW3
 ### 程式碼執行截圖
-![圖片描述](images/HW2_IMAGE1.png)
+![圖片描述](images/HW3_IMAGE.png)
 
 
   
