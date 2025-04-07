@@ -197,6 +197,9 @@ print(f"已將所有對話紀錄輸出為 {output_file}")
 ## HW3—TIMETREE行事曆
 ### 程式碼執行截圖
 ![圖片描述](images/HW3_IMAGE.png)
+![圖片描述](images/debug_1_after_login.png)
+![圖片描述](images/debug_2_after_profile.png)
+![圖片描述](images/search_result.png)
 
 
   
