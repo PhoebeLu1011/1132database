@@ -194,10 +194,11 @@ print(f"已將所有對話紀錄輸出為 {output_file}")
 
 ## HW2-復健對話分析系統 
 根據復健治療的評分項目，把每段治療師與患者的對話，透過 Gemini API 分析後，自動標上對應的評分結果，並儲存到新的 CSV 檔案。
-### 數據導入
+### 數據
+* 數據導入
 [導入數據](https://github.com/PhoebeLu1011/1132database/blob/main/113week5.csv)
 (113week5.csv)
-### 數據導出
+* 數據導出
 [導出數據](https://github.com/PhoebeLu1011/1132database/blob/main/113_batch.csv)
 (113_batch.csv)
 
