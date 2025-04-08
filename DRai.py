@@ -10,7 +10,7 @@ from google.genai.errors import ServerError
 # 載入 .env 中的 GEMINI_API_KEY
 load_dotenv()
 
-# 定義評分項目（依據原始 xlsx 編碼規則）
+#HW2 定義評分項目（依據原始 xlsx 編碼規則）
 ITEMS = [
     "動作完成度",
     "語言理解",
@@ -63,7 +63,7 @@ def select_dialogue_column(chunk: pd.DataFrame) -> str:
             return col
     print("CSV 欄位：", list(chunk.columns))
     return chunk.columns[0]
-
+#HW2
 def process_batch_dialogue(client, dialogues: list, delimiter="-----"):
     """
     將多筆逐字稿合併成一個批次請求。
@@ -113,7 +113,7 @@ def main():
         print("Usage: python DRai.py <path_to_csv>")
         sys.exit(1)
     
-    
+    #HW2
     input_csv = "113week5.csv" #sys.argv[1]
     output_csv = "113_batch.csv"
     if os.path.exists(output_csv):
