@@ -225,6 +225,27 @@ flowchart LR
 ![圖片描述](images/HW2_IMAGE01.png)
 ![圖片描述](images/HW2_IMAGE2.png)
 ## HW3—TIMETREE行事曆
+此作業使用 Playwright 自動化登入 TimeTree，搜尋指定行事曆並截圖紀錄過程。
+帳號密碼從 .env 環境變數讀取，保護個資安全。
+### 流程圖
+```
+flowchart LR
+    A[開始：執行程式] --> B[讀取 .env 檔案取得帳號密碼]
+    B --> C[啟動 Chromium 瀏覽器 (非無頭模式)]
+    C --> D[打開 TimeTree 登入頁面]
+    D --> E{找到 Email 輸入框？}
+    E -- 是 --> F[填入 Email 和 Password]
+    E -- 否 --> G[印出錯誤訊息]
+    F --> H[點擊登入按鈕]
+    H --> I[等待登入完成]
+    I --> J[跳轉到個人行事曆首頁]
+    J --> K[點擊搜尋按鈕]
+    K --> L[輸入行事曆名稱（[Midterm]）並搜尋]
+    L --> M[等待搜尋結果]
+    M --> N[截圖搜尋結果畫面]
+    N --> O[關閉瀏覽器]
+    O --> P[結束程式]
+```
 ### 程式碼執行截圖
 ![圖片描述](images/HW3_IMAGE.png)
 * 登入畫面\
