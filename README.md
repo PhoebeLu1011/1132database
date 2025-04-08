@@ -7,11 +7,11 @@
 * [抽換數據](#抽換數據)
 * [AIAGENT種類的使用](#AIAGENT的使用)
 
-### HW2
+### HW2-DRai
 * [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/DRai.py)
 * [程式碼執行截圖](#程式碼執行)
 
-### HW3
+### HW3-postAI
 * [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/HW3_POSTAI.py)
 * [程式碼執行截圖](#程式碼執行截圖)
 
