@@ -10,7 +10,7 @@
 ### HW2-DRai
 * [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/DRai.py)
 * [架構圖](#程式架構圖)
-* [數據](#數據導入)
+* [數據](#數據)
 * [程式碼執行截圖](#程式碼執行)
 
 ### HW3-postAI
