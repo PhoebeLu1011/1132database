@@ -199,6 +199,26 @@ print(f"已將所有對話紀錄輸出為 {output_file}")
 ### 數據導出
 [導出數據](https://github.com/PhoebeLu1011/1132database/blob/main/113_batch.csv)
 
+### 程式流程圖
+
+```mermaid
+flowchart LR
+    A[開始] --> B[載入 .env 檔 GEMINI_API_KEY]
+    B --> C{有提供 CSV 路徑？}
+    C -- 否 --> D[顯示錯誤訊息並退出]
+    C -- 是 --> E[讀取 CSV 檔案]
+    E --> F[建立 Gemini API client]
+    F --> G[選擇逐字稿欄位]
+    G --> H{是否還有未處理的對話？}
+    H -- 是 --> I[取出下一批 10 筆對話]
+    I --> J[送出到 Gemini API 分析]
+    J --> K[解析 API 回傳結果]
+    K --> L[把結果寫入新的 CSV]
+    L --> H
+    H -- 否 --> M[全部處理完成，結束]
+```
+
+
 ### 程式碼說明
 1. 載入環境設定: 自動讀取 .env 檔案
 ```
