@@ -9,7 +9,7 @@
 
 ### HW2-DRai
 * [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/DRai.py)
-* [數據](#數據導入(1132week5.csv))
+* [數據](#數據導入)
 * [程式碼執行截圖](#程式碼執行)
 
 ### HW3-postAI
@@ -192,7 +192,8 @@ print(f"已將所有對話紀錄輸出為 {output_file}")
 每個病患的復健分析與建議、最新搜尋到的復健治療方法。
 
 ## HW2
-### 數據導入(113week5.csv)
+### 數據導入
+(113week5.csv)
 [導入數據](https://github.com/PhoebeLu1011/1132database/blob/main/113week5.csv)
 ### 數據導出
 [導出數據](https://github.com/PhoebeLu1011/1132database/blob/main/113_batch.csv)
