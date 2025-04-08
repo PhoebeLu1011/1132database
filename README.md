@@ -206,7 +206,7 @@ print(f"已將所有對話紀錄輸出為 {output_file}")
 
 ```mermaid
 flowchart LR
-    A[開始] --> B[載入 .env 檔 GEMINI_API_KEY]
+    A[開始] --> B[載入 .env 檔]
     B --> C{有提供 CSV 路徑？}
     C -- 否 --> D[顯示錯誤訊息並退出]
     C -- 是 --> E[讀取 CSV 檔案]
