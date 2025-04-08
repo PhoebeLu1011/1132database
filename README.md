@@ -15,6 +15,7 @@
 
 ### HW3-postAI
 * [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/HW3_POSTAI.py)
+* [架構圖](#程式碼架構圖)
 * [程式碼執行截圖](#程式碼執行截圖)
 
 ## HW1—復健建議機器人
@@ -227,7 +228,7 @@ flowchart LR
 ## HW3—TIMETREE行事曆
 此作業使用 Playwright 自動化登入 TimeTree，搜尋指定行事曆並截圖紀錄過程。
 帳號密碼從 .env 環境變數讀取，保護個資安全。
-### 流程圖
+### 程式碼架構圖
 ```
 flowchart LR
     A[開始：執行程式] --> B[讀取 .env 檔案取得帳號密碼]
