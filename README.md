@@ -19,6 +19,7 @@
 * [程式碼執行截圖](#程式碼執行截圖)
 
 ### HW4-AI飲食與運動訓練建議生成器
+* [作業說明](#HW4-AI飲食與運動訓練建議生成器)
 * [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/hw4%20final.py)
 * [輸出的PDF檔案](https://github.com/PhoebeLu1011/1132database/blob/main/health_plan_20250429_225108.pdf)
 * [程式碼執行截圖]
@@ -266,24 +267,27 @@ flowchart LR
 ## HW4-AI飲食與運動訓練建議生成器
 本作業結合 Gradio、Google Gemini AI、Playwright 與 FPDF，設計一個可以分析健康資料、AI生成未來幾日的飲食與訓練建議，並匯出 PDF 或利用Playwright自動登入，讓使用者將所需資訊填入 Google Keep 中。
 
-1. 功能說明 :
-(1) 健康資料分析：上傳 CSV 資料，由 AI 自動分析飲食與運動問題
-(2)  建議內容生成：根據資料產出一天三餐與一週運動菜單
-(3)  PDF 匯出：將 AI 輸出的建議內容，轉為PDF檔
-(4)  Google Keep 自動登入：透過 Playwright，自動登入 Google 帳戶並打開 Keep 頁面，使使用者能快速記錄
+1. 功能說明 :\
+(1) 健康資料分析：上傳 CSV 資料，由 AI 自動分析飲食與運動問題\
+(2)  建議內容生成：根據資料產出一天三餐與一週運動菜單\ 
+(3)  PDF 匯出：將 AI 輸出的建議內容，轉為PDF檔\
+(4)  Google Keep 自動登入：透過 Playwright，自動登入 Google 帳戶並打開 Keep 頁面，使使用者能快速記錄\
 
-2. 使用技術與套件:
-(1) Gradio：建立前端介面
-(2) Google Gemini 2.5 Pro API：自然語言處理與建議生成
-(3) Playwright：自動化操作 Google登入介面與導向 Google Keep
-(4) FPDF：將AI建議內容生成PDF檔案
+2. 使用技術與套件:\
+(1) Gradio：建立前端介面\
+(2) Google Gemini 2.5 Pro API：自然語言處理與建議生成\
+(3) Playwright：自動化操作 Google登入介面與導向 Google Keep\
+(4) FPDF：將AI建議內容生成PDF檔案\
 
-3. 系統操作流程
-(1) 資料輸入：上傳 CSV 檔案
-(2) AI 分析：點選「 AI 分析並建議」按鈕，生成飲食菜單與運動訓練建議
-(3) 結果輸出： 點選「下載為PDF」按鈕，下載建議內容為PDF檔案，或點選「自動填入 Google Keep」按鈕，會透過playwright登入google keep，使用者須將內容輸入至 Google Keep中
+3. 系統操作流程 : \
+(1) 資料輸入：上傳 CSV 檔案\
+(2) AI 分析：點選「 AI 分析並建議」按鈕，生成飲食菜單與運動訓練建議\
+(3) 結果輸出： 點選「下載為PDF」按鈕，下載建議內容為PDF檔案，或點選「自動填入 Google Keep」按鈕，會透過playwright登入google keep，使用者須將內容輸入至 Google Keep中\\
 
-4. 程式碼截圖與操作
+4. 程式碼截圖與操作\
+<img src="HW4/操作1.png" width="500"/>
+<img src="HW4/操作2.png" width="500"/>
+
 
   
 
