@@ -19,7 +19,7 @@
 * [程式碼執行截圖](#程式碼執行截圖)
 
 ### HW4-AI飲食與運動訓練建議生成器
-* [說明](#HW4-AI飲食與運動訓練建議生成器)
+* [說明](#HW4-AI飲食菜單與運動訓練建議生成器)
 * [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/hw4%20final.py)
 * [輸出的PDF檔案](https://github.com/PhoebeLu1011/1132database/blob/main/health_plan_20250429_225108.pdf)
 * [程式碼執行截圖](#程式碼截圖與操作)
@@ -264,7 +264,7 @@ flowchart LR
 ![圖片描述](images/search_result.png)
 
 
-## HW4-AI飲食與運動訓練建議生成器
+## HW4-AI飲食菜單與運動訓練建議生成器
 本作業結合 Gradio、Google Gemini AI、Playwright 與 FPDF，設計一個可以分析健康資料、AI生成未來幾日的飲食與訓練建議，並匯出 PDF 或利用Playwright自動登入，讓使用者將所需資訊填入 Google Keep 中。
 
 1. 功能說明 :\
