@@ -19,7 +19,7 @@
 * [程式碼執行截圖](#程式碼執行截圖)
 
 ### HW4-AI飲食與運動訓練建議生成器
-* [作業說明](#HW4-AI飲食與運動訓練建議生成器)
+* [說明](#HW4-AI飲食與運動訓練建議生成器)
 * [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/hw4%20final.py)
 * [輸出的PDF檔案](https://github.com/PhoebeLu1011/1132database/blob/main/health_plan_20250429_225108.pdf)
 * [程式碼執行截圖](#程式碼截圖與操作)
