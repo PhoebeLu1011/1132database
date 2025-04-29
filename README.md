@@ -18,9 +18,15 @@
 * [架構圖](#程式碼架構圖)
 * [程式碼執行截圖](#程式碼執行截圖)
 
+### HW4-
+* [程式碼](https://github.com/PhoebeLu1011/1132database/blob/main/hw4%20final.py)
+* [架構圖]
+* [程式碼執行截圖]
+
 ## HW1—復健建議機器人
 ### 架構圖
 ![圖片描述](images/image01.png)
+
 ### 抽換數據
 
 | PatientID | Name         | Age | Gender | InjuryType       | Severity | MRI_Result           | XRay_Result          | Blood_Test_Result           | Recommended_Treatment                  |
