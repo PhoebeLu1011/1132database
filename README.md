@@ -270,7 +270,7 @@ flowchart LR
 1. 功能說明 :\
 (1) 健康資料分析：上傳 CSV 資料，由 AI 自動分析飲食與運動問題\
 (2)  建議內容生成：根據資料產出一天三餐與一週運動菜單\ 
-(3)  PDF 匯出：將 AI 輸出的建議內容，轉為PDF檔\
+(3)  PDF 匯出：將 AI 輸出的建議內容，轉為PDF檔 \
 (4)  Google Keep 自動登入：透過 Playwright，自動登入 Google 帳戶並打開 Keep 頁面，使使用者能快速記錄
 
 2. 使用技術與套件:\
@@ -285,8 +285,8 @@ flowchart LR
 (3) 結果輸出： 點選「下載為PDF」按鈕，下載建議內容為PDF檔案，或點選「自動填入 Google Keep」按鈕，會透過playwright登入google keep，使用者須將內容輸入至 Google Keep中
 
 #### 程式碼截圖與操作\
-<img src="HW4/操作1.png" width="500"/>
-<img src="HW4/操作2.png" width="500"/>
+<img src="HW4/操作1.png" width="700"/>
+<img src="HW4/操作2.png" width="700"/>
 
 
   
