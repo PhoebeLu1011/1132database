@@ -292,9 +292,15 @@ flowchart LR
 (2) AI 分析：點選「 AI 分析並建議」按鈕，生成飲食菜單與運動訓練建議\
 (3) 結果輸出： 點選「下載為PDF」按鈕，下載建議內容為PDF檔案，或點選「自動填入 Google Keep」按鈕，會透過playwright登入google keep，使用者須將內容輸入至 Google Keep中
 
-#### 程式碼截圖與操作\
+#### 程式碼截圖與操作
 <img src="HW4/操作1.png" width="700"/>
 <img src="HW4/操作2.png" width="700"/>
+
+## HW5
+#### 前端葉面截圖
+<img src="HW5/image5/start.png" width="700"/>
+<img src="HW5/image5/fin1.png" width="700"/><img src="HW5/image5/fin2.png" width="700"/><img src="HW5/image5/fin3.png" width="700"/>
+
 
 
   
