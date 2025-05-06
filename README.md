@@ -30,6 +30,7 @@
 [ai.py](https://github.com/PhoebeLu1011/1132database/blob/main/HW5/ai_module.)
 [index.html](https://github.com/PhoebeLu1011/1132database/blob/main/HW5/templates/hw5_1.html)
 * [前端介面](#前端介面截圖)
+* [輸出的PDF](https://github.com/PhoebeLu1011/1132database/blob/main/HW5/static/health_plan_20250506_161055.pdf)
 
 
 
