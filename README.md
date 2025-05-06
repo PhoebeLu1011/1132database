@@ -26,9 +26,10 @@
 
 ### HW5
 * 程式碼
-[app.py]()
-[index.html]()
-[ai.py]()
+[app.py](https://github.com/PhoebeLu1011/1132database/blob/main/HW5/hw5.py)
+[ai.py](https://github.com/PhoebeLu1011/1132database/blob/main/HW5/ai_module.)
+[index.html](https://github.com/PhoebeLu1011/1132database/blob/main/HW5/templates/hw5_1.html)
+
 
 
 ## HW1—復健建議機器人
