@@ -299,7 +299,7 @@ flowchart LR
 <img src="HW4/操作2.png" width="700"/>
 
 ## HW5
-本作業整合了 HW4，保留Google Gemini AI、Playwright 與 FPDF的應用，並將原先使用Gradio建立的介面，改為用 HTML + Flask 完成前後端整合
+本作業整合了 HW4，保留Google Gemini AI、Playwright 與 FPDF的應用，並將原先使用Gradio建立的介面，改為用 HTML + Flask 完成前後端整合，並增加了折線圖
 #### 前端介面截圖
 * 初始頁面
 <img src="HW5/image5/start.png" width="700"/>
