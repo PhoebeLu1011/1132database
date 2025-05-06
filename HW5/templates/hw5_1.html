@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康分析與建議系統</title>
+    <style>
+        body {
+            background-color: #FFF9F5;
+            font-family: 'Noto Sans TC', sans-serif;
+            color: #5D4037;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #E0AC69;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #FFEBD6;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #D46A6A;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #FFA07A;
+            border: none;
+            color: white;
+            padding: 0.8rem 1.2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 0.5rem 0.5rem 0 0; /* 上右下左間距 */
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15); /* 立體感陰影 */
+            transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #F28500;
+            transform: translateY(-2px);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .card {
+            background-color: #FFEBD6;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 2rem;
+            width: 30%;
+            min-width: 280px;
+        }
+
+        .ai-output {
+            background-color: #fffaf3;
+            padding: 1.2rem;
+            border-radius: 12px;
+            font-family: "Microsoft JhengHei", sans-serif;
+            font-size: 1rem;
+            line-height: 1.8;
+            white-space: pre-wrap;
+            word-break: break-word;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        健康分析與建議系統
+    </header>
+    <main>
+        <section class="section">
+            <h2>上傳健康資料</h2>
+            <form method="POST" enctype="multipart/form-data">
+                <input type="file" name="csv_file" class="form-control">
+                <textarea name="user_prompt" class="form-control" rows="5" placeholder="請輸入你的目標或補充說明...">使用者希望改善身體健康，請根據提供的這週運動訓練資料，進行分析，並根據今日的運動菜單，給出明日運動訓練菜單的建議與飲食菜單建議</textarea>
+                <button type="submit">分析資料並產生建議</button>
+            </form>
+        </section>
+
+        {% if ai_output %}
+        <section class="section">
+            <h2>AI 分析建議</h2>
+            <pre class="ai-output">
+            {{ ai_output }}
+            </pre>
+
+
+            <form method="POST" action="/keep">
+                <input type="hidden" name="keep_text" value="{{ ai_output }}">
+                <button type="submit">打開 Google Keep</button>
+            </form>
+
+            {% if pdf_path %}
+            <a href="/download?path={{ pdf_path }}">
+                <button>下載 PDF</button>
+            </a>
+            {% endif %}
+            <h2>心情與運動趨勢圖</h2>
+            <img src="/static/moodtrend/exercise_mood_.png" alt="心情趨勢圖" style="max-width: 100%; border-radius: 10px;">
+        </section>
+
+        {% endif %}
+</body>
+</html>
